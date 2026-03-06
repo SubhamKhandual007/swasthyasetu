@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./SuuSri.module.css";
 import Picker from "emoji-picker-react";
 
-const GROQ_API_KEY = process.env.REACT_APP_GROQ_API_KEY 
+const GROQ_API_KEY = process.env.REACT_APP_GROQ_API_KEY || "REMOVED_API_KEY"; // Fallback API key
 
 const Chat = () => {
   const [userInput, setUserInput] = useState("");
